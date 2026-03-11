@@ -207,7 +207,7 @@ p {
 	text-decoration: none;
 	color: #ebbce5;
 	border-left: 1px solid #5f3b11;
-	transition: all 0.3s ease;
+	transition: all 0.4s ease-in-out;
 }
 
 #templatemo_menu_panel li a:hover,
