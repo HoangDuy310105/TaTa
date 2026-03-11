@@ -23,6 +23,21 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult About()
+    {
+        ViewData["Title"] = "About Us";
+        ViewData["Description"] = "We are a passionate flower shop dedicated to bringing beauty and joy through fresh flowers.";
+        ViewData["Founded"] = "Founded in 2010, we have served over 10,000 happy customers.";
+        ViewData["Mission"] = "Our mission is to deliver the freshest flowers with love and care.";
+        return View();
+    }
+
+    public IActionResult Shop()
+    {
+        ViewData["Title"] = "Shop";
+        return View();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
